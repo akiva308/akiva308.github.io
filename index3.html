@@ -1,0 +1,65 @@
+<a href="index-1.html">go back to first page</a>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button {
+background-color: rgb(238, 130, 130); /*sets the button background color as violet*/
+padding: 11px 17px; /*sets the button padding as 11px and 17px */
+width: 100%; /*sets the button width 100%*/
+margin: 7px 0;/*sets the margin 7px and 0px*/
+border: none;/*sets the button border is none*/
+}
+input[type=text], input[type=password] {/*sets the user name and password fields styles my*/
+padding: 10px 16px; /*sets the user name and password padding as 10px and 16px */
+width: 100%;/*sets the user name and password width as 100% */
+display: inline-block; /*sets the user name and password display as block color*/
+margin: 7px 0;/*sets the user name and password margin as 7px and 0px*/
+border: 2px solid rgb(55, 0, 255);/*sets the user name and password border with 2px, solid border and orange color border*/
+box-sizing: border-box; /*sets the user name and password fields as box shape*/
+}
+span.passwordField {/*sets the password field style*/
+padding-top: 17px;/*sets the password field top padding as 17px*/
+float: right;/*sets the password field fixed to right*/
+}
+.mainBody {
+padding: 16px; /*sets the total body padding as 16px*/
+}
+.cancelButton {
+width: 30%;/*sets the button width 30%*/
+}
+</style>
+</head>
+<body>
+<center><h2>Login Form for Akiva's Web</h2></center>
+<!- If we have backend java file then we will login into the page->
+<form action="https://cdn.educba.com/LoginFormCSS.java" method="post">
+<div class="mainBody" style="background-color:grey">
+<!- creating user name label->
+<label for="userName">
+<b>User Name :</b>
+</label>
+<!- creating user name field->
+<input type="text" placeholder="Please enter your username" name="userName">
+<!- creating password label->
+<label for="passwordField">
+<b>Password :</b>
+</label>
+<!- creating password field->
+<input type="password" placeholder="Please enter your password" name="passwordField">
+<!- creating login button ->
+<button type="submit">Login</button>
+<!- creating checkbox for Remeber Me option ->
+<label>
+<input type="checkbox" name="rememberMe"> Remember My Details
+</label>
+</div>
+<div class="mainBody" style="background-color:gold">
+<!- creating cancel button ->
+<button type="button" class="cancelButton">Cancel It</button>
+<!- creating link for forgot password ->
+<span class="passwordField">Forgot My<a href="#">Password?</a></span>
+</div>
+</form>
+</body>
+</html>
